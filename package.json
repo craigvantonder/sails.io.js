@@ -24,7 +24,7 @@
     "request": "2.74.0",
     "sails": "^1.0.0-16",
     "sails-hook-sockets": "^1.2.3",
-    "socket.io-client": "2.0.3"
+    "socket.io-client": "4.7.5"
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha -b --reporter spec --timeout 10000",
