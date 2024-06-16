@@ -27,7 +27,7 @@
     "socket.io-client": "4.7.5"
   },
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha -b --reporter spec --timeout 10000",
+    "test": "OPENSSL_CONF=/dev/null node ./node_modules/mocha/bin/mocha -b --reporter spec --timeout 10000",
     "prepublish": "grunt publish",
     "postpublish": "cd dist && npm publish && cd .. && echo && echo '--' && echo 'Now, assuming you have not pushed up your automatic \"npm version\" commit+tag yet, run:' && echo \"git tag -d v`npm show sails.io.js version` && git commit --amend -am '`npm show sails.io.js version`' && git tag v`npm show sails.io.js version`\" && echo 'Then do:' && echo 'git push && git push --tags'"
   },
